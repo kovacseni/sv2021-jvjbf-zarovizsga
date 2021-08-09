@@ -1,7 +1,7 @@
 FROM adoptopenjdk:16-jre-hotspot as builder
 WORKDIR application
-COPY target/sv2021-jvjbf-zarovizsga-0.0.1-SNAPSHOT.jar sv2021-jvjbf-zarovizsga.jar
-RUN java -Djarmode=layertools -jar sv2021-jvjbf-zarovizsga.jar extract
+COPY target/final-exam-0.0.1-SNAPSHOT.jar final-exam.jar
+RUN java -Djarmode=layertools -jar final-exam.jar extract
 
 FROM adoptopenjdk:16-jre-hotspot
 WORKDIR application
