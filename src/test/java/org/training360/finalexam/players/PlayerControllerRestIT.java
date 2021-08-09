@@ -35,7 +35,7 @@ public class PlayerControllerRestIT {
 
         assertEquals("John Doe",result.getName());
         assertEquals(1991,result.getBirthDate().getYear());
-        assertEquals(PositionType.CENTER_BACK,result.getPosition());
+        assertEquals(PositionType.CENTER_BACK,result.getPositionType());
     }
 
     @Test

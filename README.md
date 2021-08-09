@@ -62,7 +62,7 @@ A feladat megoldásához a következő funkciókat kell megvalósítanod a megfe
     * Lehessen új csapatot létrehozni. Ehhez csak a csapat nevét kell megadni, ami kötelező.
     * Lehessen egy csapathoz új játékost hozzáadni a `/api/teams/{id}/players` végponton keresztül post metódussal. Ebben az esetben
       egy játékos minden adatát várjuk és úgy adjuk hozzá a csapathoz, hogy egyúttal a játékosok táblába is lementjük
-    * Lehessen a meglévő, szabad játékosok közül játékost igazolni a `/api/teams/{id}/players` véponton keresztül put metódussal.
+    * Lehessen a meglévő, szabad játékosok közül játékost igazolni a `/api/teams/{id}/players` végponton keresztül put metódussal.
       Ekkor a következő feltételeknek kell teljesülnie:
         * A játékosnak ne legyen csapata
         * A csapatban kevesebb mint kettő ezen a pozíción szereplő játékos legyen (ezt a service rétegben implementáld!)

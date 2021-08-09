@@ -11,7 +11,7 @@
     <groupId>org.training360</groupId>
     <artifactId>final-exam</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>final-exam</name>
+    <name>sv2021-jvjbf-zarovizsga</name>
     <description>Demo project for Spring Boot</description>
     <properties>
         <java.version>16</java.version>
