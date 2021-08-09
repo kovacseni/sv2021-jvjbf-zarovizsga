@@ -1,4 +1,4 @@
-/* package org.training360.finalexam.players;
+package org.training360.finalexam.players;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -92,4 +92,4 @@ public class PlayerControllerRestIT {
 
         assertEquals(Status.BAD_REQUEST,result.getStatus());
     }
-} */
+}
