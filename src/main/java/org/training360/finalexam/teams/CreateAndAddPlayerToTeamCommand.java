@@ -22,7 +22,4 @@ public class CreateAndAddPlayerToTeamCommand {
 
     @NotNull
     private PositionType positionType;
-
-    @NotNull
-    private Long teamId;
 }

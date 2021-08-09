@@ -7,12 +7,14 @@ import org.springframework.boot.test.web.client.TestRestTemplate;
 import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.http.HttpMethod;
 import org.springframework.test.context.jdbc.Sql;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.training360.finalexam.teams.CreateTeamCommand;
 import org.training360.finalexam.teams.TeamDTO;
 import org.training360.finalexam.teams.UpdateWithExistingPlayerCommand;
 import org.zalando.problem.Problem;
 import org.zalando.problem.Status;
 
+import javax.validation.Valid;
 import java.net.URI;
 import java.time.LocalDate;
 import java.util.List;

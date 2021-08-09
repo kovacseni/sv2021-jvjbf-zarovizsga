@@ -5,7 +5,6 @@ import org.modelmapper.TypeToken;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.training360.finalexam.players.Player;
-import org.training360.finalexam.players.PlayerDTO;
 import org.training360.finalexam.players.PlayerRepository;
 import org.training360.finalexam.players.PositionType;
 
@@ -14,7 +13,6 @@ import java.lang.reflect.Type;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
-
 
 @Service
 public class TeamService {

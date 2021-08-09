@@ -4,7 +4,6 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import org.training360.finalexam.players.PlayerDTO;
 import org.zalando.problem.Problem;
 import org.zalando.problem.Status;
 
@@ -41,7 +40,7 @@ public class TeamController {
     }
 
     @PutMapping("/{id}/players")
-    public TeamDTO addExistingPlayerToTeam(@PathVariable("id") long id, UpdateWithExistingPlayerCommand command) {
+    public TeamDTO addExistingPlayerToTeam(@PathVariable("id") long id, @Valid @RequestBody UpdateWithExistingPlayerCommand command) {
         return service.addExistingPlayerToTeam(id, command);
     }
 
