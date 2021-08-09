@@ -50,6 +50,7 @@ public class TeamService {
         Player player = new Player(command.getName(), command.getBirthDate(), command.getPositionType(), team);
         playerRepository.save(player);
         team.addPlayer(player);
+        repository.save(team);
         return modelMapper.map(team, TeamDTO.class);
     }
 
