@@ -48,8 +48,8 @@ public class TeamService {
         Team team = repository.findById(id)
                 .orElseThrow(() -> new IllegalArgumentException("Team with id: " + id + " not found."));
         Player player = new Player(command.getName(), command.getBirthDate(), command.getPositionType(), team);
-        playerRepository.save(player);
         team.addPlayer(player);
+        playerRepository.save(player);
         repository.save(team);
         return modelMapper.map(team, TeamDTO.class);
     }
