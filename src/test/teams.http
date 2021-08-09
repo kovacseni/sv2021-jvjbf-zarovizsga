@@ -18,7 +18,7 @@ Content-Type: application/json
 {
   "name": "Jack Doe",
   "birthDate": "1992-11-12",
-  "position":"RIGHT_FULLBACK"
+  "positionType":"RIGHT_FULLBACK"
 }
 
 ###

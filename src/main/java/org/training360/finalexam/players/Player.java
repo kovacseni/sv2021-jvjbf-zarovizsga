@@ -25,6 +25,7 @@ public class Player {
 
     private LocalDate birthDate;
 
+    @Enumerated(EnumType.STRING)
     private PositionType positionType;
 
     @ManyToOne
