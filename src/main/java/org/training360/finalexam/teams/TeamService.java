@@ -49,8 +49,6 @@ public class TeamService {
                 .orElseThrow(() -> new IllegalArgumentException("Team with id: " + id + " not found."));
         Player player = new Player(command.getName(), command.getBirthDate(), command.getPositionType(), team);
         team.addPlayer(player);
-        playerRepository.save(player);
-        repository.save(team);
         return modelMapper.map(team, TeamDTO.class);
     }
 
@@ -63,7 +61,6 @@ public class TeamService {
         if (player.getTeam() == null && getNumberOfPlayersInAnExactTeamWithExactPositionType(team, player.getPositionType()) < 2) {
             team.addPlayer(player);
         }
-        repository.save(team);
         return modelMapper.map(team, TeamDTO.class);
     }
 
